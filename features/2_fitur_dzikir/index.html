@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzikir Online - Kawan Puasa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="../../assets/logo_kawan_puasa.png" width="150" alt="Logo">
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="buka-puasa.html" class="nav-item">Doa</a>
+                <a href="dzikir.html" class="nav-item active">Dzikir</a>
+                <a href="#" class="nav-item">Fitur Lainnya ▾</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-wrapper">
+            <div class="hero-card">
+                <div class="hero-text">
+                    <h1>Penghitung<br>Dzikir Online</h1>
+                    <p>Dzikir jadi lebih mudah dimana saja dan kapan saja</p>
+                </div>
+                <img src="../../assets/dzikir_3d.png" alt="Tasbih" class="hero-img">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="dzikir-box">
+                <div class="dzikir-box-in">
+
+                    <label for="target" class="target-label">Atur Target</label>
+                    <input type="number" id="target" class="target-input" placeholder="Masukkan target dzikirmu">
+    
+                    <div class="counter-ui">
+                        <button class="btn-count" onclick="kurang()">-</button>
+                        <div class="count-display" id="angka">0</div>
+                        <button class="btn-count" onclick="tambah()">+</button>
+                    </div>
+    
+                    <button class="btn-reset" onclick="reset()">Reset Hitungan</button>
+                    <p id="notif" class="notif">✨ Target tercapai! Alhamdulillah ✨</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="../../assets/logo_kawan_puasa.png" width="400" alt="Logo">
+        </div>
+        <hr>
+        <p>&copy; 2026 Kawan Puasa.</p>
+    </footer>
+
+    <script src="../../js/dzikir.js">
+        
+    </script>
+</body>
+</html>

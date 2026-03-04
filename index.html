@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doa Buka Puasa - Kumpulan Doa Ramadhan</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Kawan Puasa - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Kumpulan Doa<br>Buka Puasa & Sahur</h1>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="logo.png" width="24" alt="Logo"> Kawan Puasa
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="buka-puasa.html" class="nav-item">Doa</a>
+                <a href="dzikir.html" class="nav-item">Dzikir</a>
+                <a href="#" class="nav-item">Fitur Lainnya ▾</a>
+            </div>
+        </nav>
     </header>
 
-    <nav class="nav-container">
-        <a href="buka-puasa.html" class="nav-btn active">Doa Berbuka Puasa</a>
-        <a href="doa_sahur.html" class="nav-btn">Doa Sahur</a>
-    </nav>
-
     <main>
-        <section class="hero-section">
+        <section class="hero-wrapper">
             <div class="hero-card">
                 <div class="hero-text">
-                    <h2>Kumpulan Doa<br>Buka Puasa</h2>
-                    <p>Kumpulan doa-doa selama berbuka puasa</p>
+                    <h1>Kawan Puasa</h1>
+                    <p>Platform website yang akan menjadi Teman Setia Ibadah Puasamu</p>
                 </div>
-                <div class="hero-illustration">
-                    <img class="hero-image" src="assets/ico_iftar.png" alt="">
-                </div>
+                <img src="hero-img.png" alt="Ilustrasi Ramadhan" class="hero-img">
             </div>
         </section>
 
-        <p class="section-title">Daftar doa-doa selama berbuka puasa</p>
-
-        <div class="content-wrapper">
-            
-            <section class="doa-container">
-                <article class="doa-card">
-                    <div class="doa-badge"><p>Doa 1 (riwayat Abu Daud dari Mu'adz bin Zahrah)</p></div>
-                    <p class="doa-arabic">اللَّهُمَّ لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ</p>
-                    <p class="doa-translation">Artinya: "Ya Allah, untuk-Mu aku berpuasa, kepada-Mu aku beriman, dan dengan rezeki-Mu aku berbuka, dengan rahmat-Mu wahai yang Maha Pengasih dan Penyayang."</p>
-                </article>
-
-                <article class="doa-card">
-                    <div class="doa-badge">Doa 2 (riwayat Abu Daud dari Sahabat Ibnu Umar ra.)</div>
-                    <p class="doa-arabic">ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ، وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ</p>
-                    <p class="doa-translation">Artinya: "Telah hilang rasa haus, telah basah urat-urat, dan telah pasti ganjaran, dengan kehendak Allah Ta'ala."</p>
-                </article>
-            </section>
-        </div>
+        <section class="container">
+            <h2 class="section-title">Fitur Kawan Puasa</h2>
+            <div class="features-grid">
+                <a href="buka-puasa.html" class="feature-card">
+                    <img src="doa-icon.png" alt="Doa">
+                    <h3>Kumpulan Doa<br>Berbuka & Sahur</h3>
+                </a>
+                <a href="dzikir.html" class="feature-card">
+                    <img src="tasbih-icon.png" alt="Dzikir">
+                    <h3>Penghitung Dzikir<br>Online</h3>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Kumpulan Doa Ramadhan</p>
+        <div class="footer-logo">
+            <img src="logo.png" width="35" alt="Logo"> Kawan Puasa
+        </div>
+        <hr>
+        <p>&copy; 2026 Kawan Puasa.</p>
     </footer>
 
+    <script src="js/dzikir.js">
+        
+    </script>
 </body>
 </html>
