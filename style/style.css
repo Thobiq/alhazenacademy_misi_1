@@ -1,8 +1,7 @@
-/* style.css */
 :root {
-    --primary-green: #20947A; /* Menyesuaikan warna teal-green di desain */
+    --primary-green: #20947A; 
     --primary-hover: #1a7a64;
-    --light-green: #E8F3EE; /* Background hijau sangat muda */
+    --light-green: #E8F3EE; 
     --white: #ffffff;
     --text-dark: #333333;
     --text-gray: #666666;
@@ -21,7 +20,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- UTILITIES --- */
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -34,7 +32,6 @@ body {
     width: 100%;
 }
 
-/* --- NAVBAR KAPSUL --- */
 header {
     padding: 1.5rem 1.5rem 0.5rem;
     max-width: 920px;
@@ -97,7 +94,6 @@ header {
     border-radius: 3px;
 }
 
-/* --- HERO SECTION --- */
 .hero-wrapper {
     max-width: 900px;
     margin: 1.5rem auto 2.5rem;
@@ -133,7 +129,6 @@ header {
     height: auto;
 }
 
-/* --- HOMEPAGE FITUR --- */
 .section-title {
     color: var(--primary-green);
     font-size: 1.2rem;
@@ -173,7 +168,6 @@ header {
     line-height: 1.3;
 }
 
-/* --- DOA SECTION --- */
 .doa-tabs {
     display: flex;
     gap: 1rem;
@@ -241,7 +235,6 @@ header {
     font-size: 0.95rem;
 }
 
-/* --- DZIKIR SECTION --- */
 .dzikir-box {
     display: flex;
     align-items: center;
@@ -330,7 +323,6 @@ header {
     display: none;
 }
 
-/* --- FOOTER --- */
 footer {
     background-color: var(--primary-green);
     color: var(--white);
@@ -356,7 +348,6 @@ footer hr {
     margin: 0 auto 1.5rem;
 }
 
-/* --- RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
