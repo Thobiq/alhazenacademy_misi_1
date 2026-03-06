@@ -14,7 +14,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 body {
+    /* min-width: 100%; */
     background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
@@ -328,6 +331,10 @@ header {
 }
 
 footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: var(--primary-green);
     color: var(--white);
     text-align: center;
