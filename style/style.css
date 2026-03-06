@@ -18,6 +18,9 @@
 
 body {
     /* min-width: 100%; */
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 230px;
     background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
@@ -140,7 +143,7 @@ header {
     color: var(--primary-green);
     font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .features-grid {
