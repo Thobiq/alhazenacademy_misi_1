@@ -103,12 +103,16 @@ header {
 .hero-card {
     background-color: var(--primary-green);
     border-radius: 20px;
-    padding: 0 3rem;
+    padding: 3rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--white);
     gap: 2rem;
+}
+
+.hero-icon{
+    width: 400px;
 }
 
 .hero-text h1 {
@@ -377,7 +381,7 @@ footer hr {
     }
 
     .hero-img {
-        max-width: 200px;
+        width: 200px;
     }
 
     .features-grid {
