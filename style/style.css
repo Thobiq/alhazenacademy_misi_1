@@ -399,7 +399,7 @@ footer hr {
     margin-bottom: 0.5rem;
 }
 
-/* --- ZAKAT CALCULATOR FORM --- */
+/* form zakat */
 .zakat-calc-container {
     display: flex;
     gap: 3rem;
@@ -464,7 +464,8 @@ footer hr {
     margin-top: 0.2rem;
 }
 
-/* --- RESULT BOX --- */
+/* card hasil */
+
 .zakat-result {
     flex: 2;
     background-color: var(--primary-green);
@@ -510,6 +511,46 @@ footer hr {
 .btn-bayar:hover {
     background-color: var(--white);
     color: var(--primary-green);
+}
+
+/* sub zakat perusahaan */
+.zakat-sub-tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.sub-tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-gray);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+.sub-tab-btn.active {
+    color: var(--primary-green);
+}
+
+.sub-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.65rem; 
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-green);
+    border-radius: 50px;
+}
+
+.hidden {
+    display: none !important;
 }
 
 @media (max-width: 768px) {
