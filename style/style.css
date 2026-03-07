@@ -362,7 +362,163 @@ footer hr {
     margin: 0 auto 1.5rem;
 }
 
+/* zakat */
+
+.zakat-menu {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.zakat-card {
+    flex: 1;
+    min-width: 150px;
+    border: 2px solid var(--primary-green);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: 700;
+    transition: all 0.3s;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.zakat-card.active, .zakat-card:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.zakat-card img {
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+/* --- ZAKAT CALCULATOR FORM --- */
+.zakat-calc-container {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.zakat-form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-addon {
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-weight: 700;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px 0 0 50px;
+    border: 1px solid var(--primary-green);
+}
+
+.input-zakat {
+    flex: 1;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--primary-green);
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.input-zakat[readonly] {
+    background-color: #f0f0f0;
+    color: var(--text-gray);
+}
+
+.form-note {
+    color: #d93025;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 0.2rem;
+}
+
+/* --- RESULT BOX --- */
+.zakat-result {
+    flex: 2;
+    background-color: var(--primary-green);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+    position: sticky;
+    top: 20px;
+}
+
+.zakat-result h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.result-output {
+    background-color: var(--white);
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.btn-bayar {
+    background-color: #1a7a64;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-bayar:hover {
+    background-color: var(--white);
+    color: var(--primary-green);
+}
+
 @media (max-width: 768px) {
+    .zakat-calc-container {
+        flex-direction: column;
+    }
+    .zakat-result {
+        width: 100%;
+    }
     .nav-links {
         display: none;
         position: absolute;

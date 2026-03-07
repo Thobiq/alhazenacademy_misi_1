@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat - Kawan Puasa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="../../assets/logo_kawan_puasa.png" width="150" alt="Logo"> 
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="buka-puasa.html" class="nav-item">Doa</a>
+                <a href="dzikir.html" class="nav-item">Dzikir</a>
+                <a href="kalkulator-zakat.html" class="nav-item active">Zakat</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-wrapper">
+            <div class="hero-card">
+                <div class="hero-text">
+                    <h1>Perhitungan Zakat<br>Online</h1>
+                    <p>Hitung zakat jadi lebih mudah dan cepat</p>
+                </div>
+                <img src="../../assets/ico_zakat.png" alt="Zakat" class="hero-img">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="zakat-menu">
+                <a href="#" class="zakat-card active" id="btn-penghasilan">
+                    <img src="../../assets/profit.png" alt="">
+                    Zakat<br>Penghasilan
+                </a>
+                <a href="#" class="zakat-card" id="btn-perusahaan">
+                    <img src="../../assets/office_green.png" alt="">
+                    Zakat<br>Perusahaan
+                </a>
+                <a href="#" class="zakat-card" id="btn-perdagangan">
+                    <img src="../../assets/balance_green.png" alt="">
+                    Zakat<br>Perdagangan
+                </a>
+                <a href="#" class="zakat-card" id="btn-emas">
+                    <img src="../../assets/gold_green.png" alt="">
+                    Zakat<br>Emas
+                </a>
+            </div>
+        </section>
+
+        <div class="bg-light">
+            <section class="container">
+                <h2 class="section-title" style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Zakat Penghasilan</h2>
+                
+                <div class="zakat-calc-container" id="form-penghasilan">
+                    <div class="zakat-form">
+                        <div class="form-group">
+                            <label class="form-label">Gaji per bulan</label>
+                            <div class="input-group">
+                                <span class="input-addon">Rp</span>
+                                <input type="text" class="input-zakat format-uang" id="gaji" placeholder="Masukkan gaji perbulan">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Penghasilan lain-lain perbulan</label>
+                            <div class="input-group">
+                                <span class="input-addon">Rp</span>
+                                <input type="text" class="input-zakat format-uang" id="lainnya" placeholder="Masukkan penghasilan lain-lain per bulan">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Nisab per tahun</label>
+                            <div class="input-group">
+                                <span class="input-addon">Rp</span>
+                                <input type="text" class="input-zakat" id="nisab-tahun" readonly>
+                            </div>
+                            <span class="form-note">Sesuai SK Ketua BAZNAS No. 15 tahun 2026</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Nisab per bulan</label>
+                            <div class="input-group">
+                                <span class="input-addon">Rp</span>
+                                <input type="text" class="input-zakat" id="nisab-bulan" readonly>
+                            </div>
+                            <span class="form-note">Sesuai SK Ketua BAZNAS No. 15 tahun 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="zakat-result">
+                        <h3>Jumlah Wajib Zakat (2.5%)</h3>
+                        <input type="text" class="result-output" id="hasil-zakat" value="0" readonly>
+                        <a href="https://bayarzakat.baznas.go.id/bayarzakat">
+                            <button class="btn-bayar">Bayar Zakat</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.png" width="35" alt="Logo"> Kawan Puasa
+        </div>
+        <hr>
+        <p>&copy; 2026 Kawan Puasa.</p>
+    </footer>
+
+    <script src="../../js/zakat.js"></script>
+    <script>
+        // Navbar Mobile (Sama seperti sebelumnya)
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
