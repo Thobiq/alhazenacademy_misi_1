@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Zakat - Kawan Puasa</title>
+    <title>Zakat Emas - Kawan Puasa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style/style.css">
 </head>
@@ -12,16 +12,16 @@
     <header>
         <nav class="navbar">
             <div class="nav-brand">
-                <img src="../../assets/logo_kawan_puasa.png" width="150" alt="Logo"> 
+                <img src="../../assets/logo_kawan_puasa.png" width="150" alt="Logo">
             </div>
             <button class="hamburger" id="hamburger">
                 <span></span><span></span><span></span>
             </button>
             <div class="nav-links" id="navLinks">
-                <a href="../../" class="nav-item">Home</a>
-                <a href="../../features/1_fitur_doa/doa_berbuka.html" class="nav-item">Doa</a>
-                <a href="../../features/2_fitur_dzikir/" class="nav-item">Dzikir</a>
-                <a href="" class="nav-item active">Zakat</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="buka-puasa.html" class="nav-item">Doa</a>
+                <a href="dzikir.html" class="nav-item">Dzikir</a>
+                <a href="kalkulator-zakat.html" class="nav-item active">Zakat</a>
             </div>
         </nav>
     </header>
@@ -39,19 +39,19 @@
 
         <section class="container">
             <div class="zakat-menu">
-                <a href="#" class="zakat-card active" id="btn-penghasilan">
-                    <img src="../../assets/penghasilan_white.png" alt="">
+                <a href="./" class="zakat-card">
+                    <img src="../../assets/penghasilan_green.png" alt="">
                     Zakat<br>Penghasilan
                 </a>
-                <a href="./zakat_perusahaan.html" class="zakat-card" id="btn-perusahaan">
-                    <img src="../../assets/office_green.png" alt="">
+                <a href="./zakat_perusahaan.html" class="zakat-card active">
+                    <img src="../../assets/office_white.png" alt="">
                     Zakat<br>Perusahaan
                 </a>
-                <a href="./zakat_perdagangan.html" class="zakat-card" id="btn-perdagangan">
-                    <img src="../../assets/balance_green.png" alt="">
+                <a href="./zakat_perdagangan.html" class="zakat-card">
+                    <img src="../../assets/perdagangan_green.png" alt="">
                     Zakat<br>Perdagangan
                 </a>
-                <a href="./zakat_emas.html" class="zakat-card" id="btn-emas">
+                <a href="./zakat_emas.html" class="zakat-card">
                     <img src="../../assets/gold_green.png" alt="">
                     Zakat<br>Emas
                 </a>
@@ -60,51 +60,42 @@
 
         <div class="bg-light">
             <section class="container">
-                <h2 class="section-title" style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Zakat Penghasilan</h2>
+                <h2 class="section-title" style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Zakat Emas</h2>
                 
-                <div class="zakat-calc-container" id="form-penghasilan">
+                <div class="zakat-calc-container">
                     <div class="zakat-form">
+                        
                         <div class="form-group">
-                            <label class="form-label">Gaji per bulan</label>
+                            <label class="form-label">Jumlah Emas yang Dimiliki</label>
                             <div class="input-group">
-                                <span class="input-addon">Rp</span>
-                                <input type="text" class="input-zakat format-uang" id="gaji" placeholder="Masukkan gaji perbulan">
+                                <span class="input-addon">gram</span>
+                                <input type="number" class="input-zakat input-hitung" id="jumlah-emas" placeholder="Masukkan jumlah emas yang dimiliki" step="any">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Penghasilan lain-lain perbulan</label>
+                            <label class="form-label">Harga Emas per Gram</label>
                             <div class="input-group">
                                 <span class="input-addon">Rp</span>
-                                <input type="text" class="input-zakat format-uang" id="lainnya" placeholder="Masukkan penghasilan lain-lain per bulan">
+                                <input type="text" class="input-zakat format-uang input-hitung" id="harga-emas" placeholder="Masukkan harga emas per gram">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label">Nisab per tahun</label>
                             <div class="input-group">
-                                <span class="input-addon">Rp</span>
-                                <input type="text" class="input-zakat" id="nisab-tahun" readonly>
+                                <span class="input-addon">gram</span>
+                                <input type="text" class="input-zakat" value="85" readonly>
                             </div>
                             <span class="form-note">Sesuai SK Ketua BAZNAS No. 15 tahun 2026</span>
                         </div>
 
-                        <div class="form-group">
-                            <label class="form-label">Nisab per bulan</label>
-                            <div class="input-group">
-                                <span class="input-addon">Rp</span>
-                                <input type="text" class="input-zakat" id="nisab-bulan" readonly>
-                            </div>
-                            <span class="form-note">Sesuai SK Ketua BAZNAS No. 15 tahun 2026</span>
-                        </div>
                     </div>
 
                     <div class="zakat-result">
                         <h3>Jumlah Wajib Zakat (2.5%)</h3>
                         <input type="text" class="result-output" id="hasil-zakat" value="0" readonly>
-                        <a href="https://bayarzakat.baznas.go.id/bayarzakat">
-                            <button class="btn-bayar">Bayar Zakat</button>
-                        </a>
+                        <button class="btn-bayar">Bayar Zakat</button>
                     </div>
                 </div>
             </section>
@@ -113,13 +104,13 @@
 
     <footer>
         <div class="footer-logo">
-            <img src="logo.png" width="35" alt="Logo"> Kawan Puasa
+            <img src="../../assets/logo_kawan_puasa.png" width="300" alt="Logo">
         </div>
         <hr>
         <p>&copy; 2026 Kawan Puasa.</p>
     </footer>
 
-    <script src="../../js/zakat.js"></script>
+    <script src="../../js/zakat_emas.js"></script>
     <script>
         document.getElementById('hamburger').addEventListener('click', function() {
             document.getElementById('navLinks').classList.toggle('show');
