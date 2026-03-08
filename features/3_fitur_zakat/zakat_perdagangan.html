@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zakat Perusahaan - Kawan Puasa</title>
+    <title>Zakat Perdagangan - Kawan Puasa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style/style.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <div class="nav-brand">
-                <img src="../../assets/logo_kawan_puasa.png" width="150" alt="Logo">
+                <img src="logo.png" width="24" alt="Logo"> Kawan Puasa
             </div>
             <button class="hamburger" id="hamburger">
                 <span></span><span></span><span></span>
@@ -32,26 +33,26 @@
                     <h1>Perhitungan Zakat<br>Online</h1>
                     <p>Hitung zakat jadi lebih mudah dan cepat</p>
                 </div>
-                <img src="../../assets/ico_zakat.png" alt="Zakat" class="hero-img">
+                <img src="zakat-hero.png" alt="Zakat" class="hero-img">
             </div>
         </section>
 
         <section class="container">
             <div class="zakat-menu">
-                <a href="./" class="zakat-card">
-                    <img src="../../assets/penghasilan_green.png" alt="">
+                <a href="kalkulator-zakat.html" class="zakat-card">
+                    <img src="icon-penghasilan.png" alt="">
                     Zakat<br>Penghasilan
                 </a>
-                <a href="./zakat_perusahaan.html" class="zakat-card active">
-                    <img src="../../assets/office_white.png" alt="">
+                <a href="zakat-perusahaan.html" class="zakat-card">
+                    <img src="icon-perusahaan.png" alt="">
                     Zakat<br>Perusahaan
                 </a>
-                <a href="#" class="zakat-card">
-                    <img src="../../assets/perdagangan_green.png" alt="">
+                <a href="zakat-perdagangan.html" class="zakat-card active">
+                    <img src="icon-perdagangan.png" alt="">
                     Zakat<br>Perdagangan
                 </a>
                 <a href="#" class="zakat-card">
-                    <img src="../../assets/gold_green.png" alt="">
+                    <img src="icon-emas.png" alt="">
                     Zakat<br>Emas
                 </a>
             </div>
@@ -59,39 +60,34 @@
 
         <div class="bg-light">
             <section class="container">
-                <h2 class="section-title" style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Zakat Perusahaan</h2>
+                <h2 class="section-title" style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Zakat Perdagangan</h2>
                 
                 <div class="zakat-calc-container">
                     <div class="zakat-form">
                         
-                        <div class="zakat-sub-tabs">
-                            <button class="sub-tab-btn active" id="btn-jasa">Jasa</button>
-                            <button class="sub-tab-btn" id="btn-dagang">Dagang/Industri</button>
-                        </div>
-
-                        <div id="sub-form-jasa" class="form-group">
-                            <label class="form-label">Pendapatan Sebelum Pajak</label>
+                        <div class="form-group">
+                            <label class="form-label">Aset Lancar</label>
                             <div class="input-group">
                                 <span class="input-addon">Rp</span>
-                                <input type="text" class="input-zakat format-uang" id="pendapatan-jasa" placeholder="Masukkan pendapatan sebelum pajak">
+                                <input type="text" class="input-zakat format-uang" id="aset-lancar" placeholder="Masukkan aset lancar">
                             </div>
                         </div>
 
-                        <div id="sub-form-dagang" class="hidden" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <div class="form-group">
-                                <label class="form-label">Aktiva Lancar</label>
-                                <div class="input-group">
-                                    <span class="input-addon">Rp</span>
-                                    <input type="text" class="input-zakat format-uang" id="aktiva-lancar" placeholder="Masukkan nilai aktiva lancar">
-                                </div>
+                        <div class="form-group">
+                            <label class="form-label">Laba</label>
+                            <div class="input-group">
+                                <span class="input-addon">Rp</span>
+                                <input type="text" class="input-zakat format-uang" id="laba" placeholder="Masukkan Laba">
                             </div>
-                            <div class="form-group">
-                                <label class="form-label">Pasiva Lancar (Kewajiban Jangka Pendek)</label>
-                                <div class="input-group">
-                                    <span class="input-addon">Rp</span>
-                                    <input type="text" class="input-zakat format-uang" id="pasiva-lancar" placeholder="Masukkan nilai pasiva lancar">
-                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Nisab per tahun</label>
+                            <div class="input-group">
+                                <span class="input-addon">Rp</span>
+                                <input type="text" class="input-zakat" id="nisab-tahun" readonly>
                             </div>
+                            <span class="form-note">Sesuai SK Ketua BAZNAS No. 15 tahun 2026</span>
                         </div>
 
                     </div>
@@ -116,7 +112,7 @@
         <p>&copy; 2026 Kawan Puasa.</p>
     </footer>
 
-    <script src="../../js/zakat_perusahaan.js"></script>
+    <script src="../../js/zakat_perdagangan.js"></script>
     <script>
         document.getElementById('hamburger').addEventListener('click', function() {
             document.getElementById('navLinks').classList.toggle('show');
